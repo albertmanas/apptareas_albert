@@ -9,7 +9,7 @@ block content
         h2.panel-title.text-center
           | 					#{title}
       .panel-body(style='padding:30px')
-        form(action='tareas/crear', method='post')
+        form(method='post',action='/tareas/crear')
           .form-group
             label(for='email') Nombre Tarea:
             input.form-control(type='text', name='nom')
@@ -18,6 +18,6 @@ block content
             input.form-control(type='text', name='etiquetes')
           .form-group
             label(for='exampleSelect1') %Realitzacio
-            input.form-control(type='number', name='realització')
-        center
-          button.btn.btn-success(type='submit') Añadir Tarea
+            input.form-control(type='number', name='realit')
+            br
+            input.btn.btn-md.btn-success(type='submit')
