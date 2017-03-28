@@ -1,0 +1,22 @@
+[
+	{
+		"nom":"Diseño wireframe",
+		"etiquetes": [ "wireframe","app","hibrida"],
+		"realització":"36"
+	},
+	{
+		"nom":"Reunión",
+		"etiquetes": ["app","hibrida"],
+		"realització":"36"
+	},
+	{
+		"nom":"Desarrollo Layout",
+		"etiquetes": [ "layout","app","hibrida"],
+		"realització":"36"
+	},
+	{
+		"nom":"Reunión cliente",
+		"etiquetes": [ "reunión","app","hibrida"],
+		"realització":"36"
+	}
+]

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+ .page-header
+  .row()
+  .col-md-offset
+    .panel.panel-primary
+      .panel-heading
+        h2.panel-title.text-center
+          | 					#{title}
+      each tarea in tareas
+        div.well(style='margin-bottom:0px')
+          h3 #{tarea.nom}
+          p  #{tarea.etiquetes}
+          .progress.progress-striped.active
+            .progress-bar(role='progressbar', aria-valuenow='tarea.realització', aria-valuemin='0', aria-valuemax='100', style='width:'+tarea.realització+'%')   #{tarea.realització}% completado
+ center
+    form.form-inline(role='form', action='tareas/new')
+      button.btn.btn-primary(type='submit') Nueva Tarea

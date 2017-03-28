@@ -1,0 +1,23 @@
+extends layout
+
+block content
+ .page-header
+ .row()
+  .col-md-offset-3.col-md-6
+    .panel.panel-success
+      .panel-heading
+        h2.panel-title.text-center
+          | 					#{title}
+      .panel-body(style='padding:30px')
+        form(action='tareas/crear', method='post')
+          .form-group
+            label(for='email') Nombre Tarea:
+            input.form-control(type='text', name='nom')
+          .form-group
+            label(for='email') Etiquetas(separadas por comas):
+            input.form-control(type='text', name='etiquetes')
+          .form-group
+            label(for='exampleSelect1') %Realitzacio
+            input.form-control(type='number', name='realització')
+        center
+          button.btn.btn-success(type='submit') Añadir Tarea
